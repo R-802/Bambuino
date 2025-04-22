@@ -1,0 +1,212 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "_deps/slint-build",
+					"childIndexes" : 
+					[
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.slint-build-Debug-4e36e9d09a89166f7e49.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "build/_deps/slint-src/api/cpp",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				},
+				{
+					"build" : "_deps/corrosion-build",
+					"jsonFile" : "directory-_deps.corrosion-build-Debug-aea60f942fa1a8e50a96.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "build/_deps/corrosion-src"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "BambuinoOS",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Slint",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "Corrosion",
+					"parentIndex" : 1
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "BambuinOS::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BambuinOS-Debug-ef6103356ad6d13260fb.json",
+					"name" : "BambuinOS",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "_cargo-build_slint-compiler::@d7c50ca524e9e873f8e9",
+					"jsonFile" : "target-_cargo-build_slint-compiler-Debug-2bb41a14f45afc65b458.json",
+					"name" : "_cargo-build_slint-compiler",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "_cargo-build_slint_cpp::@d7c50ca524e9e873f8e9",
+					"jsonFile" : "target-_cargo-build_slint_cpp-Debug-f4cc3ce5ea26f64188b8.json",
+					"name" : "_cargo-build_slint_cpp",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cargo-build_slint-compiler::@d7c50ca524e9e873f8e9",
+					"jsonFile" : "target-cargo-build_slint-compiler-Debug-60e4c1bd55bcee714ba9.json",
+					"name" : "cargo-build_slint-compiler",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cargo-build_slint_cpp::@d7c50ca524e9e873f8e9",
+					"jsonFile" : "target-cargo-build_slint_cpp-Debug-a1bd987de729157fd2b1.json",
+					"name" : "cargo-build_slint_cpp",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cargo-clean::@d7c50ca524e9e873f8e9",
+					"jsonFile" : "target-cargo-clean-Debug-b72a524a12edc126525d.json",
+					"name" : "cargo-clean",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cargo-clean_slint-compiler::@d7c50ca524e9e873f8e9",
+					"jsonFile" : "target-cargo-clean_slint-compiler-Debug-71e9466f5468e91f467e.json",
+					"name" : "cargo-clean_slint-compiler",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cargo-clean_slint_cpp::@d7c50ca524e9e873f8e9",
+					"jsonFile" : "target-cargo-clean_slint_cpp-Debug-3ce1fdd6c2bcff91adc9.json",
+					"name" : "cargo-clean_slint_cpp",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cargo-prebuild::@d7c50ca524e9e873f8e9",
+					"jsonFile" : "target-cargo-prebuild-Debug-b438d619510db07fb1c9.json",
+					"name" : "cargo-prebuild",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cargo-prebuild_slint-compiler::@d7c50ca524e9e873f8e9",
+					"jsonFile" : "target-cargo-prebuild_slint-compiler-Debug-99476444df47de8eb091.json",
+					"name" : "cargo-prebuild_slint-compiler",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cargo-prebuild_slint_cpp::@d7c50ca524e9e873f8e9",
+					"jsonFile" : "target-cargo-prebuild_slint_cpp-Debug-9584c93f2cdaa7263326.json",
+					"name" : "cargo-prebuild_slint_cpp",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/shema/Documents/PlatformIO/Projects/Bambuino/build",
+		"source" : "C:/Users/shema/Documents/PlatformIO/Projects/Bambuino"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

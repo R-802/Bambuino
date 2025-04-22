@@ -1,0 +1,6 @@
+# Hashes of file build rules.
+57c25561868204c55a695e122439dd49 _deps/slint-build/CMakeFiles/_cargo-build_slint-compiler
+bfed666ba412c0071d008f458df702e1 _deps/slint-build/CMakeFiles/_cargo-build_slint_cpp
+70ab11d8d5677d7ea50d1cdac6a60d91 _deps/slint-build/CMakeFiles/cargo-clean_slint-compiler
+8ff7eda42f37cf97c671d29da6a349d1 _deps/slint-build/CMakeFiles/cargo-clean_slint_cpp
+d7e18bcbfa6bc6695b523789b253bed8 app-window.h

@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\Bambuino_UI.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\Bambuino_UI.dir/objects.a @CMakeFiles\Bambuino_UI.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Bambuino_UI.dir/objects.a -Wl,--no-whole-archive -o Bambuino_UI.exe -Wl,--out-implib,libBambuino_UI.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Bambuino_UI.dir\linkLibs.rsp

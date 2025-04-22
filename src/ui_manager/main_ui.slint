@@ -1,0 +1,1080 @@
+
+import "./assets/InstrumentSans-VariableFont.ttf";
+import "./assets/InstrumentSans-Italic.ttf";
+import { Button, VerticalBox } from "std-widgets.slint";
+
+
+export component SideBar {
+    Rectangle {
+        x: -2px;
+        y: -2px;
+        width: 75px;
+        height: 485px;
+        background: #111111;
+        border-color: #ffffff14;
+        border-width: 2px;
+        Rectangle { // Selection Highlight
+            x: -49px;
+            y: 15px;
+            width: 117px;
+            height: 47px;
+            background: @linear-gradient(90deg, #ff2a2a 0%, #111111 100%);
+            border-radius: 25px;
+        }
+
+        Rectangle { // Home
+            x: 24.45px;
+            y: 24.8px;
+            width: 26.4px;
+            height: 26.4px;
+            Image {
+                x: 0px;
+                y: 0px;
+                width: 26.4px;
+                height: 26.4px;
+                source: @image-url("./assets/coffee.svg");
+            }
+        }
+
+        Rectangle { // Wind
+            x: 24.45px;
+            y: 78.7px;
+            width: 26.4px;
+            height: 26.4px;
+            Image {
+                x: 0px;
+                y: 0px;
+                width: 26.4px;
+                height: 26.4px;
+                source: @image-url("./assets/wind.svg");
+            }
+        }
+
+        Rectangle { // Hot Water
+            x: 24.45px;
+            y: 156.8px;
+            width: 26.4px;
+            height: 26.4px;
+            Image {
+                x: 0px;
+                y: 0px;
+                width: 26.4px;
+                height: 26.4px;
+                source: @image-url("./assets/droplets.svg");
+            }
+        }
+
+        Rectangle { // Favorite Presets
+            x: 24.45px;
+            y: 212.9px;
+            width: 26.4px;
+            height: 26.4px;
+            Image {
+                x: 0px;
+                y: 0px;
+                width: 26.4px;
+                height: 26.4px;
+                source: @image-url("./assets/star.svg");
+            }
+        }
+
+        Path { // Separator
+            x: 0px;
+            y: 170px;
+            stroke: #ffffff14;
+            stroke-width: 2.56px;
+            commands: "M 0 0 L 1 0";
+            stroke-line-cap: butt;
+        }
+
+        Rectangle { // Settings Button
+            x: 0px;
+            y: 485px - 75px;
+            width: 75px;
+            height: 75px;
+            Image {
+                x: 24.45px;
+                y: 24.8px;
+                width: 26.4px;
+                height: 26.4px;
+                source: @image-url("./assets/settings.svg");
+            }
+        }
+    }
+}
+
+export component StatusBar {
+    // Pressure, temp, flow rate
+    Rectangle {
+        x: 71px;
+        y: 0px;
+        width: 689px;
+        height: 85px;
+        Rectangle {
+            x: 0px;
+            width: 221.369px;
+            height: 85px;
+            background: #1e1e1e80;
+            border-radius: 9.957px;
+            drop-shadow-blur: 7px;
+            drop-shadow-color: #00000050;
+            drop-shadow-offset-x: 0px;
+            drop-shadow-offset-y: 0px;
+            Rectangle {
+                x: 15px;
+                y: 18px;
+                width: 11px;
+                height: 11px;
+                Image {
+                    source: @image-url("./assets/gauge_icon.svg");
+                }
+            }
+
+            Rectangle {
+                x: 30.68px;
+                y: 14.94px;
+                width: 160px;
+                height: 13px;
+                Text {
+                    x: 0px;
+                    y: 0px;
+                    text: "PRESSURE";
+                    color: #f2f4f7;
+                    font-family: "Instrument Sans";
+                    font-size: 8.713px;
+                    font-weight: 400;
+                }
+            }
+
+            Rectangle {
+                x: 14.94px;
+                y: 32.94px;
+                width: 191.497px;
+                height: 42.489px;
+                Rectangle {
+                    x: 0px;
+                    y: 0px;
+                    width: 191.497px;
+                    height: 30px;
+                    Text {
+                        x: 0px;
+                        y: 0px;
+                        text: "5.6 BAR";
+                        color: #f2f4f7;
+                        font-family: "Instrument Sans";
+                        font-size: 22.404px;
+                        font-weight: 500;
+                    }
+
+                    Rectangle {
+                        x: 0px;
+                        y: 30px;
+                        width: 191.497px;
+                        height: 10px;
+                        Text {
+                            x: 0px;
+                            text: "PUMP POWER: 12%";
+                            color: #98a2b3;
+                            font-family: "Instrument Sans";
+                            font-size: 7.468px;
+                            font-weight: 400;
+                        }
+
+                        Text {
+                            text: "(↑22.2%)";
+                            color: #15c66e;
+                            font-family: "Instrument Sans";
+                            font-size: 7.468px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+
+        Rectangle {
+            x: 233.82px;
+            width: 221.369px;
+            height: 85px;
+            background: #1e1e1e80;
+            border-radius: 9.957px;
+            drop-shadow-blur: 7px;
+            drop-shadow-color: #00000050;
+            drop-shadow-offset-x: 0px;
+            drop-shadow-offset-y: 0px;
+            Rectangle {
+                x: 12px;
+                y: 15px;
+                width: 11px;
+                height: 11px;
+                Image {
+                    x: 0px;
+                    y: 0px;
+                    width: 17px;
+                    height: 19px;
+                    source: @image-url("./assets/flame.svg");
+                }
+            }
+
+            Rectangle {
+                x: 30.68px;
+                y: 14.94px;
+                width: 160px;
+                height: 13px;
+                Text {
+                    x: 0px;
+                    y: 0px;
+                    text: "TEMPERATURE";
+                    color: #f2f4f7;
+                    font-family: "Instrument Sans";
+                    font-size: 8.713px;
+                    font-weight: 400;
+                }
+            }
+
+            Rectangle {
+                x: 14.94px;
+                y: 32.94px;
+                width: 191.497px;
+                height: 42.489px;
+                Rectangle {
+                    x: 0px;
+                    y: 0px;
+                    width: 191.497px;
+                    height: 30px;
+                    Text {
+                        x: 0px;
+                        y: 0px;
+                        text: "90.1 °C";
+                        color: #f2f4f7;
+                        font-family: "Instrument Sans";
+                        font-size: 22.404px;
+                        font-weight: 500;
+                    }
+
+                    Rectangle {
+                        x: 0px;
+                        y: 30px;
+                        width: 191.497px;
+                        height: 10px;
+                        Text {
+                            x: 0px;
+                            text: "HEATER POWER: 54.5%";
+                            color: #98a2b3;
+                            font-family: "Instrument Sans";
+                            font-size: 7.468px;
+                            font-weight: 400;
+                            Text {
+                                x: parent.width + 2px;
+                                text: "(↑35.2%)";
+                                color: #15c66e;
+                                font-family: "Instrument Sans";
+                                font-size: 7.468px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        Rectangle {
+            x: 467.63px;
+            width: 221.369px;
+            height: 85px;
+            background: #1e1e1e80;
+            border-radius: 9.957px;
+            drop-shadow-blur: 7px;
+            drop-shadow-color: #00000050;
+            drop-shadow-offset-x: 0px;
+            drop-shadow-offset-y: 0px;
+            Rectangle {
+                x: 15px;
+                y: 15px;
+                width: 11px;
+                height: 11px;
+                Rectangle {
+                    x: 0.393px;
+                    y: 4px;
+                    width: 11px;
+                    height: 11px;
+                    Image {
+                        source: @image-url("./assets/drop.svg");
+                    }
+                }
+            }
+
+            Rectangle {
+                x: 30.68px;
+                y: 14.94px;
+                width: 160px;
+                height: 13px;
+                Text {
+                    x: 0px;
+                    y: 0px;
+                    text: "FLOW RATE";
+                    color: #f2f4f7;
+                    font-family: "Instrument Sans";
+                    font-size: 8.713px;
+                    font-weight: 400;
+                }
+            }
+
+            Rectangle {
+                x: 14.94px;
+                y: 32.94px;
+                width: 191.497px;
+                height: 42.489px;
+                Rectangle {
+                    x: 0px;
+                    y: 0px;
+                    width: 191.497px;
+                    height: 30px;
+                    Text {
+                        x: 0px;
+                        y: 0px;
+                        text: "7.6 mL/s";
+                        color: #f2f4f7;
+                        font-family: "Instrument Sans";
+                        font-size: 22.404px;
+                        font-weight: 500;
+                    }
+
+                    Rectangle {
+                        x: 0px;
+                        y: 30px;
+                        width: 191.497px;
+                        height: 10px;
+                        Text {
+                            x: 0px;
+                            text: "Target: 3.2 mL/s";
+                            color: #98a2b3;
+                            font-family: "Instrument Sans";
+                            font-size: 7.468px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+export component Header {
+    Rectangle {
+        x: 0px;
+        y: 0px;
+        width: 687px;
+        height: 30px;
+        Text {
+            x: 0px;
+            y: 4px;
+            text: "Good Morning";
+            color: #f2f4f7;
+            font-size: 16px;
+            font-weight: 800;
+            font-family: "Instrument Sans SemiBold";
+        }
+
+        Text {
+            x: 630px;
+            y: 4px;
+            text: "5:35AM";
+            color: #f2f4f7;
+            font-size: 16px;
+            font-weight: 100;
+            font-family: "Instrument Sans Regular";
+        }
+    }
+}
+
+export component ExtractionProfile {
+    Rectangle {
+        x: 0;
+        y: 0;
+        width: 454px;
+        height: 313px;
+        background: #1e1e1e80;
+        border-radius: 8.627px;
+        Rectangle {
+            x: 12px;
+            y: 18.5px;
+            width: 308.75px;
+            height: 11px;
+            Text {
+                x: 0px;
+                y: 0px;
+                text: "EXTRACTION PROFILE";
+                color: #f2f4f7;
+                font-family: "Instrument Sans";
+                font-size: 7.549px;
+                font-weight: 400;
+            }
+        }
+
+        Rectangle {
+            x: 320.75px;
+            y: 13.22px;
+            width: 120.254px;
+            height: 21.568px;
+            border-radius: 4.314px;
+            border-width: 0.539px;
+            border-color: #ffffff29;
+            Text {
+                x: 20.78px;
+                y: 5.78px;
+                text: "RAO’S BLOOMING ESPRESSO";
+                color: #f2f4f7;
+                font-family: "Instrument Sans";
+                font-size: 6.47px;
+                font-weight: 400;
+                horizontal-alignment: left;
+                vertical-alignment: center;
+            }
+
+            // Icon
+            Rectangle {
+                x: 4.47px;
+                y: 4.284px;
+                width: 13px;
+                height: 13px;
+                Image {
+                    x: 0px;
+                    y: 0px;
+                    width: 13px;
+                    height: 13px;
+                    source: @image-url("./assets/file-cog.svg");
+                }
+            }
+        }
+
+        // Chart
+        Rectangle {
+            x: 26px;
+            y: 45px;
+            width: 398px;
+            height: 250px;
+            in-out property <int> counter: 0;
+            for i in 5: Rectangle { // Y-axis boxes
+                x: 0px;
+                y: 5px + i * 40px;
+                width: parent.width;
+                height: 20.5px;
+                Text { // Y-axis labels
+                    x: 0px;
+                    y: 0px;
+                    text: counter;
+                    color: #98a2b3;
+                    font-family: "Instrument Sans";
+                    font-size: 6.47px;
+                    font-weight: 400;
+                    horizontal-alignment: left;
+                    vertical-alignment: center;
+                }
+
+                Text { // Y-axis right side
+                    x: parent.width - 6px;
+                    y: 0px;
+                    text: counter;
+                    color: #98a2b3;
+                    font-family: "Instrument Sans";
+                    font-size: 6.47px;
+                    font-weight: 400;
+                    horizontal-alignment: left;
+                    vertical-alignment: center;
+                }
+
+                for i in 53: Rectangle {
+                    x: 15px;
+                    y: 0px;
+                    width: parent.width - 30px;
+                    height: 20.5px;
+                    Path {
+                        x: i * 7px;
+                        y: -6px;
+                        width: 4px;
+                        height: 20.492px;
+                        stroke: #ffffff;
+                        opacity: 0.08;
+                        stroke-width: 0.55px;
+                        stroke-line-cap: square;
+                        commands: "M 0 0 L 1 0";
+                    }
+                }
+            }
+            Rectangle { // Y-axis zero line
+                x: 15px;
+                y: 200px;
+                width: parent.width - 30px;
+                height: 20.5px;
+                Path {
+                    x: 0px;
+                    y: 0px;
+                    width: parent.width + 15px;
+                    stroke: #ffffff;
+                    opacity: 0.08;
+                    stroke-width: 0.55px;
+                    stroke-line-cap: square;
+                    commands: "M 0 0 L 1 0";
+                }
+
+                Text {
+                    x: -15px;
+                    y: 6px;
+                    text: "0";
+                    color: #98a2b3;
+                    font-family: "Instrument Sans";
+                    font-size: 6.47px;
+                    font-weight: 400;
+                }
+            }
+
+            in-out property <int> time: 2; // seconds
+            
+            Rectangle { // X-axis labels
+                x: 15px;
+                y: 212.5px;
+                width: parent.width - 30px;
+                height: 20.5px;
+                for i in time + 1: Text {
+                    x: i * parent.width / (time);
+                    y: 6.26px;
+                    text: counter;
+                    color: #98a2b3;
+                    font-family: "Instrument Sans";
+                    font-size: 6.47px;
+                    font-weight: 400;
+                    horizontal-alignment: center;
+                    vertical-alignment: center;
+                }
+            }
+
+            Rectangle { // Legend
+                x: 0;
+                y: 240px;
+                width: parent.width;
+                height: 10px;
+                Rectangle {
+                    x: 133px;
+                    width: 34.549px;
+                    height: 10px;
+                    Rectangle {
+                        x: -10px;
+                        width: 5.392px;
+                        height: 5.392px;
+                        background: #ff2a2a;
+                        border-radius: 1.078px;
+                    }
+
+                    Text {
+                        x: 0px;
+                        text: "Pressure";
+                        color: #98a2b3;
+                        font-family: "Instrument Sans";
+                        font-size: 6.47px;
+                        font-weight: 400;
+                    }
+                }
+
+                Rectangle {
+                    x: 175px;
+                    width: 34.549px;
+                    height: 10px;
+                    Rectangle {
+                        x: 0px;
+                        width: 5.392px;
+                        height: 5.392px;
+                        background: #ff5b00;
+                        border-radius: 1.078px;
+                    }
+
+                    Text {
+                        x: 10px;
+                        text: "Temperature";
+                        color: #98a2b3;
+                        font-family: "Instrument Sans";
+                        font-size: 6.47px;
+                        font-weight: 400;
+                        horizontal-alignment: center;
+                        vertical-alignment: center;
+                    }
+                }
+
+                Rectangle {
+                    x: 240px;
+                    width: 34.549px;
+                    height: 10px;
+                    Rectangle {
+                        x: 0px;
+                        width: 5.392px;
+                        height: 5.392px;
+                        background: #078ada;
+                        border-radius: 1.078px;
+                    }
+
+                    Text {
+                        x: 10px;
+                        text: "Flow Rate";
+                        color: #98a2b3;
+                        font-family: "Instrument Sans";
+                        font-size: 6.47px;
+                        font-weight: 400;
+                        horizontal-alignment: center;
+                        vertical-alignment: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+export component MachineStatus {
+    Rectangle {
+        x: 0;
+        y: 0;
+        width: 221px;
+        height: 313px;
+        background: #1e1e1e80;
+        border-radius: 10.245px;
+        drop-shadow-blur: 7px;
+        drop-shadow-color: #00000050;
+        drop-shadow-offset-x: 0px;
+        drop-shadow-offset-y: 0px;
+
+        // Title
+        Text {
+            x: 15.37px;
+            y: 15.37px;
+            text: "MACHINE STATUS";
+            color: #f2f4f7;
+            font-family: "Instrument Sans";
+            font-size: 8.964px;
+            font-weight: 400;
+        }
+
+        // Profile Step
+        Rectangle {
+            x: 15.37px;
+            y: 38.37px;
+            width: 190.266px;
+            height: 44px;
+            Text {
+                x: 0px;
+                y: 0px;
+                text: "Profile Step";
+                color: #98a2b3;
+                font-family: "Instrument Sans";
+                font-size: 7.683px;
+                font-weight: 400;
+            }
+
+            Text {
+                x: 0px;
+                y: 13.56px;
+                text: "IDLE";
+                color: #f2f4f7;
+                font-family: "Instrument Sans";
+                font-size: 23.05px;
+                font-weight: 500;
+            }
+        }
+
+        // Water Level & Pre-infusion
+        Rectangle {
+            x: 15.37px;
+            y: 84.93px;
+            width: 190.266px;
+            height: 26.245px;
+            Rectangle {
+                x: 0px;
+                y: 0px;
+                width: 93.705px;
+                height: 26.245px;
+                Text {
+                    x: 0px;
+                    y: 0px;
+                    text: "Water Level";
+                    color: #98a2b3;
+                    font-family: "Instrument Sans";
+                    font-size: 7.683px;
+                    font-weight: 400;
+                }
+
+                Text {
+                    x: 0px;
+                    y: 10.24px;
+                    text: "85%";
+                    color: #f2f4f7;
+                    font-family: "Instrument Sans";
+                    font-size: 10.245px;
+                    font-weight: 500;
+                }
+            }
+
+            Rectangle {
+                x: 96.27px;
+                y: 0px;
+                width: 94px;
+                height: 26.245px;
+                Text {
+                    x: 0px;
+                    y: 0px;
+                    text: "Pre-infusion";
+                    color: #98a2b3;
+                    font-family: "Instrument Sans";
+                    font-size: 7.683px;
+                    font-weight: 400;
+                }
+
+                Text {
+                    x: 0px;
+                    y: 10.24px;
+                    text: "5s";
+                    color: #f2f4f7;
+                    font-family: "Instrument Sans";
+                    font-size: 10.245px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        // Dose and Target Weight
+        Rectangle {
+            x: 15.37px;
+            y: 121.17px;
+            width: 190.266px;
+            height: 26.245px;
+            Rectangle {
+                x: 0px;
+                y: 0px;
+                width: 94px;
+                height: 26px;
+                Text {
+                    x: 0px;
+                    y: 0px;
+                    text: "Dose";
+                    color: #98a2b3;
+                    font-family: "Instrument Sans";
+                    font-size: 7.683px;
+                    font-weight: 400;
+                }
+
+                // Minus Button
+                Rectangle {
+                    x: 0px;
+                    y: 10.367px;
+                    width: 16px;
+                    height: 16px;
+                    Image {
+                        x: 0px;
+                        y: 0px;
+                        width: 16px;
+                        height: 16px;
+                        source: @image-url("./assets/minus-square.svg");
+                    }
+                }
+
+                Rectangle {
+                    x: 0px;
+                    y: 0px;
+                    height: 17px;
+                    width: 15px;
+                    Text {
+                        x: 20.63px;
+                        y: 10.83px;
+                        text: "16g";
+                        color: #f2f4f7;
+                        font-family: "Instrument Sans";
+                        font-size: 10.245px;
+                        font-weight: 500;
+                    }
+                }
+
+                // Plus Button
+                Rectangle {
+                    x: 43px;
+                    y: 10.367px;
+                    width: 16px;
+                    height: 16px;
+                    Image {
+                        x: 0px;
+                        y: 0px;
+                        width: 16px;
+                        height: 16px;
+                        source: @image-url("./assets/add-square.svg");
+                    }
+                }
+            }
+
+            Rectangle {
+                x: 96.27px;
+                y: 0px;
+                width: 94px;
+                height: 26.245px;
+                Text {
+                    x: 0px;
+                    y: 0px;
+                    text: "Target Weight";
+                    color: #98a2b3;
+                    font-family: "Instrument Sans";
+                    font-size: 7.683px;
+                    font-weight: 400;
+                }
+
+                // Minus Button
+                Rectangle {
+                    x: 0px;
+                    y: 10.367px;
+                    width: 16px;
+                    height: 16px;
+                    Image {
+                        x: 0px;
+                        y: 0px;
+                        width: 16px;
+                        height: 16px;
+                        source: @image-url("./assets/minus-square.svg");
+                    }
+                }
+
+                Rectangle {
+                    x: 0px;
+                    y: 0px;
+                    height: 17px;
+                    width: 15px;
+                    Text {
+                        x: 20.63px;
+                        y: 10.83px;
+                        text: "32g";
+                        color: #f2f4f7;
+                        font-family: "Instrument Sans";
+                        font-size: 10.245px;
+                        font-weight: 500;
+                    }
+                }
+
+                // Plus Button
+                Rectangle {
+                    x: 43px;
+                    y: 10.367px;
+                    width: 16px;
+                    height: 16px;
+                    Image {
+                        x: 0px;
+                        y: 0px;
+                        width: 16px;
+                        height: 16px;
+                        source: @image-url("./assets/add-square.svg");
+                    }
+                }
+            }
+        }
+
+        // Actual Volume and Actual Weight
+        Rectangle {
+            x: 15.37px;
+            y: 157.41px;
+            width: 190.266px;
+            height: 26.245px;
+            Rectangle {
+                x: 0px;
+                y: 0px;
+                width: 93.705px;
+                height: 26.245px;
+                Text {
+                    x: 0px;
+                    y: 0px;
+                    text: "Actual Volume";
+                    color: #98a2b3;
+                    font-family: "Instrument Sans";
+                    font-size: 7.683px;
+                    font-weight: 400;
+                }
+
+                Text {
+                    x: 0px;
+                    y: 10.24px;
+                    text: "0mL";
+                    color: #f2f4f7;
+                    font-family: "Instrument Sans";
+                    font-size: 10.245px;
+                    font-weight: 500;
+                }
+            }
+
+            Rectangle {
+                x: 96.27px;
+                y: 0px;
+                width: 94px;
+                height: 26.245px;
+                Text {
+                    x: 0px;
+                    y: 0px;
+                    text: "Actual Weight";
+                    color: #98a2b3;
+                    font-family: "Instrument Sans";
+                    font-size: 7.683px;
+                    font-weight: 400;
+                }
+
+                Text {
+                    x: 0px;
+                    y: 10.24px;
+                    text: "32g";
+                    color: #f2f4f7;
+                    font-family: "Instrument Sans";
+                    font-size: 10.245px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        // Brew Ratio and Time Elapsed
+        Rectangle {
+            x: 15.37px;
+            y: 193.66px;
+            width: 190.266px;
+            height: 26.245px;
+            Rectangle {
+                x: 0px;
+                y: 0px;
+                width: 93.705px;
+                height: 26.245px;
+                Text {
+                    x: 0px;
+                    y: 0px;
+                    text: "Brew Ratio";
+                    color: #98a2b3;
+                    font-family: "Instrument Sans";
+                    font-size: 7.683px;
+                    font-weight: 400;
+                }
+
+                Text {
+                    x: 0px;
+                    y: 10.24px;
+                    text: "1:2";
+                    color: #f2f4f7;
+                    font-family: "Instrument Sans";
+                    font-size: 10.245px;
+                    font-weight: 500;
+                }
+            }
+
+            Rectangle {
+                x: 96.27px;
+                y: 0px;
+                width: 94px;
+                height: 26.245px;
+                Text {
+                    x: 0px;
+                    y: 0px;
+                    text: "Time Elapsed";
+                    color: #98a2b3;
+                    font-family: "Instrument Sans";
+                    font-size: 7.683px;
+                    font-weight: 400;
+                }
+
+                Text {
+                    x: 0px;
+                    y: 10.24px;
+                    text: "0s";
+                    color: #f2f4f7;
+                    font-family: "Instrument Sans";
+                    font-size: 10.245px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        // Start Button
+        Rectangle {
+            x: 15px;
+            y: 232px;
+            width: 191px;
+            height: 69px;
+            background: #00ff88;
+            border-radius: 10px;
+            drop-shadow-blur: 10px;
+            drop-shadow-color: #00ff8874;
+            drop-shadow-offset-x: 0px;
+            drop-shadow-offset-y: 0px;
+            Rectangle {
+                x: 58px;
+                y: 11px;
+                width: 191px;
+                height: 69px;
+                Text {
+                    x: 0px;
+                    y: 0px;
+                    text: "START";
+                    color: #ffffff;
+                    font-size: 23.05px;
+                    font-weight: 800;
+                    horizontal-alignment: center;
+                    vertical-alignment: center;
+                    font-family: "Instrument Sans Bold Italic";
+                    font-italic: true;
+                }
+            }
+
+            Text {
+                x: 67px;
+                y: 36px;
+                text: "ESPRESSO";
+                color: #ffffff;
+                font-family: "Instrument Sans";
+                font-size: 11px;
+                font-weight: 400;
+            }
+
+            // Pattern
+            Rectangle {
+                x: -73px;
+                y: 50px;
+                width: 130px;
+                height: 25px;
+                for i in 13: Path {
+                    x: i * 10px;
+                    y: 1px;
+                    stroke: #000000;
+                    opacity: 0.06;
+                    stroke-width: 2.56px;
+                    commands: "M 0 0 L 1 1.1";
+                    stroke-line-cap: round;
+                }
+            }
+        }
+    }
+}
+
+export component MyApp inherits Window {
+    width: 800px;
+    height: 480px;
+    background: #111111;
+    default-font-family: "Instrument Sans";
+    SideBar {
+        x: 0px;
+        y: 0px;
+    }
+
+    Header {
+        x: 90px;
+        y: 14px;
+    }
+
+    StatusBar {
+        x: 18px;
+        y: 51px;
+    }
+
+    ExtractionProfile {
+        x: 90px;
+        y: 150px;
+    }
+
+    MachineStatus {
+        x: 557px;
+        y: 150px;
+    }
+}

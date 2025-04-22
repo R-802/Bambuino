@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/shema/Documents/PlatformIO/Projects/Bambuino/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/BambuinOS.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\BambuinOS.dir\\src\\main.cpp.obj -c C:\\Users\\shema\\Documents\\PlatformIO\\Projects\\Bambuino\\src\\main.cpp",
+  "file": "C:/Users/shema/Documents/PlatformIO/Projects/Bambuino/src/main.cpp",
+  "output": "CMakeFiles/BambuinOS.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/shema/Documents/PlatformIO/Projects/Bambuino/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/BambuinOS.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\BambuinOS.dir\\slint_generated_app-window_1.cpp.obj -c C:\\Users\\shema\\Documents\\PlatformIO\\Projects\\Bambuino\\build\\slint_generated_app-window_1.cpp",
+  "file": "C:/Users/shema/Documents/PlatformIO/Projects/Bambuino/build/slint_generated_app-window_1.cpp",
+  "output": "CMakeFiles/BambuinOS.dir/slint_generated_app-window_1.cpp.obj"
+}
+]

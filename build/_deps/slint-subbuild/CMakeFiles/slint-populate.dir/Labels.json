@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/shema/Documents/PlatformIO/Projects/Bambuino/build/_deps/slint-subbuild/CMakeFiles/slint-populate"
+		},
+		{
+			"file" : "C:/Users/shema/Documents/PlatformIO/Projects/Bambuino/build/_deps/slint-subbuild/CMakeFiles/slint-populate.rule"
+		},
+		{
+			"file" : "C:/Users/shema/Documents/PlatformIO/Projects/Bambuino/build/_deps/slint-subbuild/CMakeFiles/slint-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/shema/Documents/PlatformIO/Projects/Bambuino/build/_deps/slint-subbuild/slint-populate-prefix/src/slint-populate-stamp/slint-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/shema/Documents/PlatformIO/Projects/Bambuino/build/_deps/slint-subbuild/slint-populate-prefix/src/slint-populate-stamp/slint-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/shema/Documents/PlatformIO/Projects/Bambuino/build/_deps/slint-subbuild/slint-populate-prefix/src/slint-populate-stamp/slint-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/shema/Documents/PlatformIO/Projects/Bambuino/build/_deps/slint-subbuild/slint-populate-prefix/src/slint-populate-stamp/slint-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/shema/Documents/PlatformIO/Projects/Bambuino/build/_deps/slint-subbuild/slint-populate-prefix/src/slint-populate-stamp/slint-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/shema/Documents/PlatformIO/Projects/Bambuino/build/_deps/slint-subbuild/slint-populate-prefix/src/slint-populate-stamp/slint-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/shema/Documents/PlatformIO/Projects/Bambuino/build/_deps/slint-subbuild/slint-populate-prefix/src/slint-populate-stamp/slint-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/shema/Documents/PlatformIO/Projects/Bambuino/build/_deps/slint-subbuild/slint-populate-prefix/src/slint-populate-stamp/slint-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"slint-populate"
+		],
+		"name" : "slint-populate"
+	}
+}

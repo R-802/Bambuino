@@ -1,0 +1,96 @@
+{
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"_add_cargo_build",
+			"_generator_add_package_targets",
+			"_generator_add_cargo_targets",
+			"corrosion_import_crate"
+		],
+		"files" : 
+		[
+			"build/_deps/corrosion-src/cmake/Corrosion.cmake",
+			"build/_deps/corrosion-src/cmake/CorrosionGenerator.cmake",
+			"build/_deps/slint-src/api/cpp/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 132,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 1044,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 278,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 176,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 881,
+				"parent" : 4
+			}
+		]
+	},
+	"id" : "cargo-clean_slint-compiler::@d7c50ca524e9e873f8e9",
+	"name" : "cargo-clean_slint-compiler",
+	"paths" : 
+	{
+		"build" : "_deps/slint-build",
+		"source" : "build/_deps/slint-src/api/cpp"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/_deps/slint-build/CMakeFiles/cargo-clean_slint-compiler",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/_deps/slint-build/CMakeFiles/cargo-clean_slint-compiler.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

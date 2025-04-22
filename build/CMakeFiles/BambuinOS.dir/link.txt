@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\BambuinOS.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\BambuinOS.dir/objects.a @CMakeFiles\BambuinOS.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\BambuinOS.dir/objects.a -Wl,--no-whole-archive -o BambuinOS.exe -Wl,--out-implib,libBambuinOS.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\BambuinOS.dir\linkLibs.rsp

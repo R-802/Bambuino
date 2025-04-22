@@ -1,0 +1,1 @@
+C:\Users\shema\Documents\PlatformIO\Projects\Bambuino\build\corrosion\required_libs\target\x86_64-pc-windows-msvc\debug\required_libs.lib: C:\Users\shema\Documents\PlatformIO\Projects\Bambuino\build\corrosion\required_libs\lib.rs

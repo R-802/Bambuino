@@ -1,0 +1,175 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"build/_deps/slint-src/api/cpp/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 399,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 400,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 403,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 406,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 416,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/Slint",
+			"exportName" : "SlintTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "Slint::@d7c50ca524e9e873f8e9",
+					"index" : 0
+				},
+				{
+					"id" : "slint_cpp::@d7c50ca524e9e873f8e9",
+					"index" : 0
+				}
+			],
+			"paths" : 
+			[
+				"_deps/slint-build/CMakeFiles/Export/002ce537dcf861259db4455970114bb1/SlintTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/slint",
+			"paths" : 
+			[
+				"build/_deps/slint-src/api/cpp/include/slint-interpreter.h",
+				"build/_deps/slint-src/api/cpp/include/slint-platform.h",
+				"build/_deps/slint-src/api/cpp/include/slint-stm32.h",
+				"build/_deps/slint-src/api/cpp/include/slint-testing.h",
+				"build/_deps/slint-src/api/cpp/include/slint.h",
+				"build/_deps/slint-src/api/cpp/include/slint_brush.h",
+				"build/_deps/slint-src/api/cpp/include/slint_callbacks.h",
+				"build/_deps/slint-src/api/cpp/include/slint_color.h",
+				"build/_deps/slint-src/api/cpp/include/slint_config.h",
+				"build/_deps/slint-src/api/cpp/include/slint_image.h",
+				"build/_deps/slint-src/api/cpp/include/slint_interpreter.h",
+				"build/_deps/slint-src/api/cpp/include/slint_pathdata.h",
+				"build/_deps/slint-src/api/cpp/include/slint_point.h",
+				"build/_deps/slint-src/api/cpp/include/slint_properties.h",
+				"build/_deps/slint-src/api/cpp/include/slint_sharedvector.h",
+				"build/_deps/slint-src/api/cpp/include/slint_size.h",
+				"build/_deps/slint-src/api/cpp/include/slint_string.h",
+				"build/_deps/slint-src/api/cpp/include/slint_tests_helpers.h",
+				"build/_deps/slint-src/api/cpp/include/slint_timer.h",
+				"build/_deps/slint-src/api/cpp/include/slint_window.h",
+				"build/_deps/slint-src/api/cpp/include/vtable.h",
+				"build/_deps/slint-build/generated_include/slint_brush_internal.h",
+				"build/_deps/slint-build/generated_include/slint_builtin_structs.h",
+				"build/_deps/slint-build/generated_include/slint_builtin_structs_internal.h",
+				"build/_deps/slint-build/generated_include/slint_color_internal.h",
+				"build/_deps/slint-build/generated_include/slint_enums.h",
+				"build/_deps/slint-build/generated_include/slint_enums_internal.h",
+				"build/_deps/slint-build/generated_include/slint_generated_public.h",
+				"build/_deps/slint-build/generated_include/slint_image_internal.h",
+				"build/_deps/slint-build/generated_include/slint_internal.h",
+				"build/_deps/slint-build/generated_include/slint_pathdata_internal.h",
+				"build/_deps/slint-build/generated_include/slint_platform_internal.h",
+				"build/_deps/slint-build/generated_include/slint_properties_internal.h",
+				"build/_deps/slint-build/generated_include/slint_qt_internal.h",
+				"build/_deps/slint-build/generated_include/slint_sharedvector_internal.h",
+				"build/_deps/slint-build/generated_include/slint_string_internal.h",
+				"build/_deps/slint-build/generated_include/slint_timer_internal.h",
+				"build/_deps/slint-build/generated_include/slint_interpreter_internal.h",
+				"build/_deps/slint-build/generated_include/slint_interpreter_generated_public.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"build/_deps/slint-build/slint_cpp.dll"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"build/_deps/slint-build/libslint_cpp.dll.a"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"build/_deps/slint-build/slint-compiler.exe"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/Slint",
+			"paths" : 
+			[
+				"build/_deps/slint-build/lib/cmake/Slint/SlintConfig.cmake",
+				"build/_deps/slint-build/lib/cmake/Slint/SlintConfigVersion.cmake",
+				"build/_deps/slint-src/api/cpp/cmake/SlintMacro.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/slint-build",
+		"source" : "build/_deps/slint-src/api/cpp"
+	}
+}

@@ -1,31 +1,36 @@
-# Bambuino Control System with Slint UI
+# The Bambuino Project
 
-This project is an ESP32-S3 based control system for temperature, pressure, and flow control, with a modern Slint-based user interface.
+**Bambuino** is an embedded espresso machine controller inspired by the [Gaggiuino Project](https://github.com/Zer0-bit/gaggiuino), reimagined to run natively on the **ESP32** platform. It features a modular architecture that cleanly separates a modern UI from robust backend logic, enabling precise, real-time control for coffee enthusiasts and tinkerers.
 
-## Architecture
+---
 
-The system has a clear separation between frontend UI and backend functionality:
+## 🔧 System Architecture
 
-### Frontend UI (Slint)
+The system is built around the **ESP32** microcontroller and is structured into three main layers:
 
-The UI is built using [Slint](https://slint.dev/), a modern UI framework for embedded systems:
+### 🖥️ Frontend UI — *Powered by [Slint](https://slint.dev/)*
 
-- **src/ui_manager/main_ui.slint**: Declarative UI definition using Slint language
-- **src/ui_manager/generated/**: Contains generated C bindings from Slint files
-- **src/display_driver.c**: Contains the Slint renderer implementation for ESP32
+A sleek, embedded-friendly user interface developed using **Slint**, a declarative UI toolkit:
 
-### Backend (Application Logic)
+- `src/ui_manager/main_ui.slint` — Slint UI definition
+- `src/ui_manager/generated/` — Auto-generated C bindings from Slint files
+- `src/display_driver.c` — Custom Slint renderer integration for ESP32 display output
 
-The application logic is separate from the UI:
+### ⚙️ Backend — *Application Logic & Hardware Control*
 
-- **src/main.c**: Main application entry point and PID control loops
-- **src/sensor_manager/**: Sensor reading and data management
-- **src/hardware/**: Hardware control for SSRs, dimmer, and other peripherals
-- **src/pid_controller.c**: PID control implementation
+This is where the real-time control and system logic lives:
 
-### UI Manager (Bridge)
+- `src/main.c` — Main entry point, system setup, and PID control loops
+- `src/sensor_manager/` — Modules for sensor input, filtering, and management
+- `src/hardware/` — Direct control of hardware components (SSRs, dimmer, etc.)
+- `src/pid_controller.c` — PID control algorithms for temperature and pressure regulation
 
-The UI Manager acts as a bridge between frontend and backend:
+### 🔄 UI Manager — *Bridge Between UI and Backend*
 
-- **src/ui_manager/ui_manager.c**: Connects UI events to application logic
-- **include/ui_manager/ui_manager.h**: Public API for UI management
+Handles interaction between the user interface and core logic:
+
+- `src/ui_manager/ui_manager.c` — Manages UI events and syncs state
+- `include/ui_manager/ui_manager.h` — Public API for external interaction with the UI layer
+
+---
+
